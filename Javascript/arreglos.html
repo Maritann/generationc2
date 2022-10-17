@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//arreglos
+//variable con más variables
+//varias cajitas dentro de corchetes
+//contenedor de variables
+//conjunto de datos agrupados en una variable, como una matriz
+//lista de elementos, que pueden tener distintos tipos de datos
+//muchos objetos en una sola caja
+//estante que se puede utilizar en 2d y 3d
+
+//conjunto de datos ordenados según su ingreso. Estan separados por coma
+//todos los arreglos comienzan en la posición cero (0)
+
+//arreglo= tamaño predefinido, no puede cambiar
+//lista = tamaño dinámico
+var vocales = ["u","i","e","o","a"]
+console.log(vocales)
+
+//tiene 5 elementos pero el último está en la posición 4
+//el primero en la posición 0
+var arreglo1= ["afrahj",123, true] //puede contener cualquier variable
+// length - cantidad de elementos o tamaño del arreglo (en este caso son 5l)
+console.log(vocales[0],vocales[1])
+console.log(vocales[2])
+console.log(vocales[3])
+console.log(vocales[5]) //saldrá que está indefinido
+console.log(vocales[-1]) //saldrá indefinitdo también
+
+console.log(vocales[3-2]) //nos tendría que dar 1 o sea i
+console.log(vocales[0,1])
+
+vocales[1] = "y"; //también podemos sobre escribir como en las variables solas, 
+//pero en una posición específica
+console.log(vocales);
+
+vocales="aeiou"; //se puede también sobre estribir el arreglo, ahora este es string
+console.log(vocales);
+
+var arreglo2 = []
+console.log(arreglo2.length);
+arreglo2.push(1);
+arreglo2.push(8);
+var ultimo = arreglo2.pop();
+console.log(ultimo);
+
+
+console.log(arreglo2)
+
+
+
+
+//agrega un dato al final
+
+
+console.log("string aeiou",vocales[3]);
+
+
+
+
+    </script>
+</body>
+</html>
