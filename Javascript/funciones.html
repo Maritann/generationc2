@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fx</title>
+</head>
+<body>
+    <script>
+        // FUNCIONES
+        // trozo de codigo, que solo se ejecutará cuando sea llamado
+        /* function nombre_funcion() {
+            //accion o codigo a ejecutar
+        }*/
+
+        //llamado a la función
+        // nombre_funcion();
+
+        function ejemplo(){
+            console.log("Estoy dentro de la funcion");
+        }
+        ejemplo (); //llamado a la función
+
+        function imprimir(cantidad){ //parámetro. a cantidad -> 3
+            console.log("parametro",cantidad);
+
+        }
+
+        imprimir(3); //nombre y argumento 
+    // se imprimirá parametro 3
+
+
+    var numero_impar=1;
+
+        function imprimirImpar(impar){ //impar=1 (pasamos el valor)
+            console.log("impar",impar);
+            console.log("numero_impar",numero_impar);
+            numero_impar=3;  //sobreescritura
+        }
+        imprimirImpar(numero_impar);
+        console.log("nuevo numero_impar",numero_impar);
+
+        //retorno
+
+        function sumaNumeros(){
+            console.log(numero_impar +  4); // console.log(3+4)
+            return numero_impar + 4; //return 7
+        }
+        var numeroRetornado = sumaNumeros (); //llamado a la función, el resultado es 7
+        // var numeroRetornado=7;
+
+        function sumaImpar(){
+            return 3+5;
+        }
+        var impares = sumaImpar();
+        console.log("suma impares",impares)//
+
+        function multiplicacion(numero1,numero2){
+            return numero1+numero2;
+        }
+
+        var resultadoMultiplicacion = multiplicacion (34,76);
+        console.log ("el resultado es ", resultadoMultiplicacion);
+
+        console.clear();
+
+        function crearNuevoArreglo(numero){
+            var arreglo= [];
+            for(let i=0; i <= numero ; i++){
+                arreglo.push(i);
+
+            }
+            return arreglo;
+        }
+        var miArreglo = crearNuevoArreglo(30);  //numero que quiera  o poner var numeroIngresado= parseInt(prompt("ingresa un número",0));
+        console.log("mi arreglo", miArreglo);    //
+
+        /*function crearNuevoArreglo(numero){
+            var arreglo = [];//[0,1,2]
+            for(let i=0; i <= numero;i++){
+                arreglo.push(i);
+            }
+            return arreglo;
+        }
+        var numeroIngresado= prompt("ingresa un numero",0);
+        var miArreglo = crearNuevoArreglo(numeroIngresado);
+        console.log("mi arreglo",miArreglo);
+        */
+
+        //validacion si solo quiero que dentro del arreglo me ponga los pares
+
+        //antes de arreglo.push poner if(i%2==0){}
+
+
+    </script>
+    
+</body>
+</html>

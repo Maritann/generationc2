@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucle while</title>
+</head>
+<body>
+    <script>
+        //-------------WHILE-------------
+        //mientras la condiciión sea verdadera se va a repetir
+        
+        /*while(condicion){
+        
+        }
+        */
+
+        var contador = 0;   //definiendo variable
+        while(contador <=5){   //aquí valida, mientras sea verdadero entrará el resto
+            console.log("somos bacanes"); //para que termine la condicion tenemos que hacer que en algun momento sea falso
+            contador++; //le sumamos 1 al contador por cada vez que entre la condición
+            // contador = contador +1; contador +=1;
+        
+        }
+
+        /*contador empieza en cero, es menor a 5, entra al console luego incrementa la variable en 1, 0+1= 1 y entra denuevo al bucle
+        ahora 1 es menor o igual a 5, imprime, incrementa queda en 2...
+        cuando llega a 6, ya no es menor o igual a 5 entonces ya no sigue imprimiendo
+        */ 
+        var termino = true;//variable booleana
+        var contador = 10 // numero cualquiera
+
+        console.log ("contador",contador);
+
+        while(termino){
+            contador = contador +10;
+            console.log ("contador",contador);
+            if (contador == 200){ //si queremos que termine cuando el contador sea igual a 200
+                termino=false; // si el if ocurre el termino se volverá falso
+            } //no imprimió en 10 porque primero incrementamos t luego imprimimos
+             // si ponemos primero el console y luego el incremento, empezará en 10 y terminará en 190
+        
+        }
+        
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
