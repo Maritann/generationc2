@@ -7,11 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        //producto más costoso del arreglo
-        //producto menos costoso del arreglo
+    <script> 
+
 
         var valores_cada_producto = [200 , 5500 , 900 , 7000, 500, 300];
+        var premisa = "Encontrar el valor mayor y el menor dentro del siguiente arreglo";
+
+
+        console.log("********");
+        console.log(premisa , valores_cada_producto);
+        console.log("********");
+
+
+        var mayorValor = Math.max.apply (null, valores_cada_producto);
+        console.log("El valor mayor es de ",mayorValor);
+
+        var valores_cada_producto = [200 , 5500 , 900 , 7000, 500, 300];
+        var menorValor = Math.min.apply (null, valores_cada_producto);
+        console.log("El valor menor es de ",menorValor);
+
+        /*
+        Lo intenté con funciones por mucho rato pero no me resultó, tuve que buscar el código en internet :C
+        */
+
+
     </script>
     
 </body>
